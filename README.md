@@ -48,6 +48,7 @@ This is an installation guide for developers.
 
 #### Preconditions
 * Check that you are using maven 3.1 or higher (mvn -V)
+* Tomcat8.5
 * Check that you have the git plugin installed in eclipse
 * Check that you have git installed
 * MySQL 5.6 or greater or PostreSQL 9.4
@@ -81,6 +82,10 @@ you created before.
 Make sure the project compiled without errors. Warnings are ok. If the project did not
 compile, you have to fix the problems before you proceed. See [Troubleshooting](#troubleshooting)
 section below.
+
+```bash
+mvn compile
+```
       
 #### 2. Setting up the database
 
