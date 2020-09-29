@@ -92,7 +92,8 @@ Prepare database permissions and initialize the database.
 
 ```sql
 CREATE DATABASE IF NOT EXISTS openolat;
-GRANT ALL PRIVILEGES ON openolat.* TO 'openolat' IDENTIFIED BY 'openolat';
+CREATE USER 'openolat'@'%' IDENTIFIED BY 'openolat';
+GRANT ALL PRIVILEGES ON openolat.* TO 'openolat';
 UPDATE mysql.user SET HOST='localhost' WHERE USER='openolat' AND HOST='%';
 FLUSH PRIVILEGES;
 ```
