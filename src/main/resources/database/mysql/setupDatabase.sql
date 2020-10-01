@@ -1,3 +1,4 @@
+USE openolat;
 SET FOREIGN_KEY_CHECKS = 0;
 
 create table if not exists o_forum (

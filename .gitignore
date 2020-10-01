@@ -1,6 +1,7 @@
 /bin/
 /target/
 /cargo/
+/data/
 /.settings/
 /.externalToolBuilders/
 
