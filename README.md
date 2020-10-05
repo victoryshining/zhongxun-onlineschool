@@ -196,6 +196,10 @@ Have fun, give feedback and contribute!
 
 #### Troubleshooting
 
+* 因为在清除过期缓存条目后可用空间仍不足 - 请考虑增加缓存的最大空间 
+解决办法：
+在 /conf/context.xml 的 </Context>前添加以下内容（大小默认是1024，单位是KB）：
+`<Resources cachingAllowed="true" cacheMaxSize="100000" />`
 * OutOfMemoryException: in Eclipse: setup VM arguments by clicking on Run > Run Configurations > Arguments > VM Arguments
   and pasting: `-XX:+UseG1GC -XX:+UseStringDeduplication -Xms256m -Xmx1024m -Djava.awt.headless=true`
 

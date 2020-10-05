@@ -88,7 +88,9 @@ public class HelpModule extends AbstractSpringModule {
 	private ListWrapper listWrapper;
 
 	// General help settings
-	@Value("${help.enabled:true}")
+	// Shining help enabled false
+	// @Value("${help.enabled:true}")
+	@Value("${help.enabled:false}")
 	private boolean helpEnabled;
 	@Value("${help.plugin:ooConfluenceLinkHelp}")
 	private String helpPlugins;

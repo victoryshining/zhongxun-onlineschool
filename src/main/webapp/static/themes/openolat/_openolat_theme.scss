@@ -30,10 +30,11 @@
 		position: relative;
 		text-align: center;
 		/* logo boxed and centered above login box on small screens */
+		/* background-image: url("images/OpenOlat_Logo_claim_RGB.svg"); */
 		&:before {
 			content: ' ';
 			display: inline-block;
-			background-image: url("images/OpenOlat_Logo_claim_RGB.svg");
+			background-image: url("images/zxlogo.png");
 			background-repeat: no-repeat;
 			background-position: center;
 			background-size: 85%;

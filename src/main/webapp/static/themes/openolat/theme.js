@@ -17,10 +17,12 @@
 			var logoElement = $(".o_navbar-brand");
 			if (logoElement && logoElement.length > 0 && !logoElement.hasClass('o_clickable')) {
 				// add marker css to remember this link is already ok, add link reference
+				// shining modified for zhongxun logo
 				logoElement.addClass('o_clickable');					
-				logoElement.prop('href', "http://www.openolat.org");
+				logoElement.prop('href', "http://www.zhongxunedu.com");
 				logoElement.prop('target', "_blank");
-				logoElement.prop('title', 'OpenOLAT - infinite learning');
+				//logoElement.prop('title', 'OpenOLAT - infinite learning');
+				logoElement.prop('title', 'ZhongXun - infinite learning');
 			}
 		},
 		
@@ -43,7 +45,9 @@
 			this.dmzCarrousel = jQuery().ooBgCarrousel();
 			this.dmzCarrousel.initCarrousel({
 				query: "#o_body.o_dmz #o_bg", 
-				images: ['infinite.jpg', 'holger.jpg', 'marco.jpg', 'openolat_award.jpg', 'weg.jpg', 'christian.jpg'], 
+				// shining modified to remove openlat images
+				// images: ['infinite.jpg', 'holger.jpg', 'marco.jpg', 'openolat_award.jpg', 'weg.jpg', 'christian.jpg'], 
+				images: ['infinite.jpg','weg.jpg'], 
 				shuffle: true,
 				shuffleFirst: false,
 				durationshow: 5000,
