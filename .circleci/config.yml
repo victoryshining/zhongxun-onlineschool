@@ -1,0 +1,18 @@
+version: 2.1
+orbs:
+  aws-s3: circleci/aws-s3@1.0.15
+jobs:
+  build:
+    docker: 
+      - image: circleci/java:8-jdk
+    steps:
+      - checkout
+      - run:
+          name: Build
+          command: mvn package
+      - aws-s3/copy:
+          aws-access-key-id: AWS_ACCESS_KEY_ID_BLUE
+          aws-region: AWS_REGION_BLUE
+          aws-secret-access-key: AWS_SECRET_ACCESS_KEY_BLUE
+          from: target/openolat-lms-15.3-SNAPSHOT.war
+          to: 's3://siku-public-artifactories/'
