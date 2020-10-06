@@ -21,6 +21,7 @@
 	#end
 	</div>
 #end
+#if($footerInfos.isOlat)
 <div id="o_footer_powered" class="clearfix">
 	<a href="https://www.openolat.org" target="_blank" title="OpenOlat - infinite learning" rel="noopener noreferrer">
 		<img src="$r.staticLink("images/openolat/openolat_powerd_by_120x30.png")" alt="powered by OpenOlat" />
@@ -29,3 +30,4 @@
 <div id="o_footer_version" class="clearfix">
 	$r.render("aboutLink")
 </div>	
+#end

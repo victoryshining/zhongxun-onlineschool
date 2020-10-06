@@ -22,7 +22,7 @@
 				logoElement.prop('href', "http://www.zhongxunedu.com");
 				logoElement.prop('target', "_blank");
 				//logoElement.prop('title', 'OpenOLAT - infinite learning');
-				logoElement.prop('title', 'ZhongXun - infinite learning');
+				logoElement.prop('title', 'iLearn - infinite learning');
 			}
 		},
 		
@@ -47,7 +47,7 @@
 				query: "#o_body.o_dmz #o_bg", 
 				// shining modified to remove openlat images
 				// images: ['infinite.jpg', 'holger.jpg', 'marco.jpg', 'openolat_award.jpg', 'weg.jpg', 'christian.jpg'], 
-				images: ['infinite.jpg','weg.jpg'], 
+				images: ['infinite.jpg','moon.jpg'], 
 				shuffle: true,
 				shuffleFirst: false,
 				durationshow: 5000,

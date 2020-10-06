@@ -84,26 +84,32 @@ public class OlatDmzTopNavController extends BasicController implements Lockable
 		impressumLink.setTarget("_blank");
 
 		// help on login page
+		// shining modified to comment out the help options
+		/*
 		if (helpModule.isHelpEnabled()) {
 			List<String> helpPlugins = new ArrayList<>();
 			for (HelpLinkSPI helpLinkSPI : helpModule.getDMZHelpPlugins()) {
 				helpPlugins.add(helpLinkSPI.getHelpUserTool(getWindowControl()).getMenuComponent(ureq, vc).getComponentName());
 			}
 			vc.contextPut("helpPlugins", helpPlugins);
-		}
+		}*/
+		
+		
 		// about link
 		aboutLink = AboutController.aboutLinkFactory("top.menu.about", getLocale(), this, true, false);
 		aboutLink.setSuppressDirtyFormWarning(true);
 		vc.put("topnav.about", aboutLink);
 
 		//choosing language 
+		// shining modified to comment out the locale selection
+		/*
 		if (i18nModule.getEnabledLanguageKeys().size() > 1) {
 			languageChooserC = new LanguageChooserController(getWindowControl(), ureq, "_top_nav_dmz_lang_chooser");
 			//DOKU:pb:2008-01 listenTo(languageChooserC); not necessary as LanguageChooser sends a MultiUserEvent
 			//which is catched by the BaseFullWebappController. This one is then 
 			//responsible to recreate the GUI with the new Locale
 			vc.put("languageChooser", languageChooserC.getInitialComponent());
-		}
+		} */
 		putInitialPanel(vc);		
 	}
 

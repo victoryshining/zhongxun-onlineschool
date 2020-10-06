@@ -38,6 +38,11 @@ public class FooterInformations {
 		this.layoutModule = layoutModule;
 	}
 	
+	//shining added to control the footer display layout
+	public boolean isIsOlat() {
+		return false;
+	}
+	
 	public boolean isHasFooterLine() {
 		String line = layoutModule.getFooterLine();
 		return StringHelper.containsNonWhitespace(line);
