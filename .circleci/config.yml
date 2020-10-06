@@ -6,4 +6,10 @@ orbs:
 workflows:
   maven_test:
     jobs:
-      - maven/test # checkout, build, test, and upload test results
+      - maven/package # checkout, build, test, and upload test results
+       - aws-s3/copy:
+          aws-access-key-id: AWS_ACCESS_KEY_ID_BLUE
+          aws-region: AWS_REGION_BLUE
+          aws-secret-access-key: AWS_SECRET_ACCESS_KEY_BLUE
+          from: target/openolat-lms-15.3-SNAPSHOT.war
+          to: 's3://siku-public-artifactories/'
