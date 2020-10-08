@@ -175,6 +175,7 @@ public class OlatTopNavController extends BasicController implements LockableCon
 						String cssId = toolExtension.getShortCutCssId();
 						String cssClass = toolExtension.getShortCutCssClass();
 						toolSetLinksName.add(new Tool(cssId, cssClass, cmp.getComponentName()));
+						System.out.println("Shining: the component name is "+cmp.getComponentName());
 						disposableTools.add(tool);
 					}
 

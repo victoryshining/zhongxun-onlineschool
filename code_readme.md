@@ -75,5 +75,29 @@
     images: ['infinite.jpg','weg.jpg'], 
     ```
 
+* Application configure
+    * configure user tools menu
+        * login as administrator
+        * go to system management
+        * go to "core configuration" -> "user tool"
+    * configure license
+        * login as administrator
+        * go to system management
+        * go to "core configuration" -> "Licenses"
+    * configure Curriculum 
+        * login as administrator
+        * go to system management
+        * go to "Module" -> "Curriculum"
+    * configure Theme 
+        * login as administrator
+        * go to system management
+        * go to "Customization" -> "Layout"
+        * change layout from "OpenOlat" to "Light"
 
-
+* System configuration
+    * configure http port
+        * src/main/resources/serviceconfig/olat.properties
+         ```
+        # the port on which the container is listening
+        server.port=8088
+         ```
