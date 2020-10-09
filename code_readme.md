@@ -109,3 +109,8 @@
     * course选择conventional类型，在setting->share里，选择Open without booking,再选择allowed for guests
     * survey里，survey->participation by,确保勾选Guests
     * 怎么看survey结果？先参与survey，就能看到结果
+* 怎么配置PDF service
+    * login as administrator
+    * go to system management
+    * go to "External tools" -> "PDF generator"
+    * https://github.com/arachnys/athenapdf/tree/master/weaver
