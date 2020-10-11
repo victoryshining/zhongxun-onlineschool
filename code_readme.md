@@ -114,3 +114,13 @@
     * go to system management
     * go to "External tools" -> "PDF generator"
     * https://github.com/arachnys/athenapdf/tree/master/weaver
+
+* 怎么开启证书
+    * 创建课程
+    * Settings->Assessment
+
+* 怎么开启订购模式
+    * 创建课程
+    * Settings->Share
+    * Bookable booking by user neccessary ---> add booking method -- access code
+
