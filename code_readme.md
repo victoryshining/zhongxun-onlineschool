@@ -102,6 +102,11 @@
         server.port=8088
          ```
 
+## 部署安装
+* 确保jdk是1.8
+1. 启动mysql
+2. 右键点击项目 run as->on server --->选择tomcat 8.5
+
 ## 教程
 * 怎么开启survey调查
     * 创建survey
